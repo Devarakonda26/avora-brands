@@ -474,3 +474,69 @@ body {
         font-size: 22px;
     }
 }
+
+/* BOOK NOW BUTTON */
+
+.book-btn {
+    border: 1px solid #00A3FF;
+    color: white;
+    border-radius: 10px;
+    padding: 12px 28px;
+    transition: 0.3s ease;
+}
+
+.book-btn:hover {
+    background: #00A3FF;
+    color: white;
+}
+
+/* MODAL */
+
+.premium-modal {
+    background: #0B1224;
+    border-radius: 22px;
+    border: 1px solid rgba(0,163,255,0.2);
+    color: white;
+    padding: 10px;
+}
+
+.modal-text {
+    color: #b8c0d1;
+    margin-bottom: 20px;
+}
+
+.booking-options {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.booking-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn {
+    background: #25D366;
+}
+
+.email-btn {
+    background: #009DFF;
+}
+
+.call-btn {
+    background: #1E293B;
+}
+
+.booking-btn:hover {
+    transform: translateY(-3px);
+    color: white;
+}
