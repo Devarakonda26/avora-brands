@@ -376,3 +376,86 @@ body {
         font-size: 14px;
     }
 }
+
+/* FLOATING BUSINESS BUTTONS */
+
+.floating-buttons {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 9999;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp-btn {
+    background: #25D366;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+.whatsapp-btn i {
+    font-size: 28px;
+}
+
+.whatsapp-btn span {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* PHONE BUTTON */
+
+.phone-btn {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #009dff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 22px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+}
+
+/* HOVER */
+
+.whatsapp-btn:hover,
+.phone-btn:hover {
+    transform: translateY(-4px);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .floating-buttons{
+        right: 18px;
+        bottom: 18px;
+    }
+
+    .whatsapp-btn span{
+        display:none;
+    }
+
+    .whatsapp-btn{
+        width:58px;
+        height:58px;
+        border-radius:50%;
+        justify-content:center;
+        padding:0;
+    }
+
+}
