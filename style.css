@@ -283,7 +283,7 @@ body {
 /* SECTIONS */
 
 .section-space {
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
 .section-title {
@@ -616,4 +616,62 @@ body {
 .booking-btn:hover {
     transform: translateY(-3px);
     color: white;
+}
+
+/* ABOUT SECTION */
+
+.about-card {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 40px;
+
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 24px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow: 
+        0 0 30px rgba(0,157,255,0.08);
+
+    transition: 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0,163,255,0.3);
+
+    box-shadow:
+        0 0 35px rgba(0,157,255,0.12);
+}
+
+/* Better text spacing */
+
+.about-card .section-title {
+    margin-bottom: 24px;
+}
+
+.about-card .section-text {
+    max-width: 760px;
+    color: #c0cad8;
+    line-height: 2;
+    font-size: 16px;
+}
+
+/* Mobile */
+
+@media (max-width:768px) {
+    .about-card {
+        padding: 35px 24px;
+        border-radius: 20px;
+    }
+
+    .about-card .section-title {
+        font-size: 28px;
+    }
+
+    .about-card .section-text {
+        font-size: 14px;
+        line-height: 1.9;
+    }
 }
