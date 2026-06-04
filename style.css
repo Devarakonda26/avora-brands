@@ -617,3 +617,58 @@ body {
     transform: translateY(-3px);
     color: white;
 }
+
+/* EXPANDING SERVICES BOOK BUTTON */
+
+.growth-book-btn {
+    margin-top: 28px;
+}
+
+.expanding-book-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white !important;
+    padding: 14px 34px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    background: linear-gradient(
+        135deg,
+        #00A3FF,
+        #0066ff,
+        #00d4ff
+    );
+    box-shadow:
+        0 0 25px rgba(0,163,255,0.35);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+/* SHINE EFFECT */
+
+.expanding-book-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.25),
+        transparent
+    );
+    transition: 0.7s;
+}
+
+.expanding-book-btn:hover::before {
+    left: 120%;
+}
+
+.expanding-book-btn:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 0 35px rgba(0,163,255,0.5);
+}
