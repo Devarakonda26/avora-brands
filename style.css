@@ -27,8 +27,8 @@ body {
 }
 
 .nav-logo {
-    width: 150px;
-    height: 150px;
+    width: 10px;
+    height: 100px;
     object-fit: contain;
 }
 
