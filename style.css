@@ -176,7 +176,31 @@ body {
 .hero-logo {
     width: 420px;
     max-width: 100%;
+    border-radius: 30px;
     filter: drop-shadow(0 0 30px rgba(0,157,255,0.25));
+    animation: floatLogo 4s ease-in-out infinite;
+    transition: all 0.4s ease;
+}
+
+/* Floating Animation */
+@keyframes floatLogo {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Hover Effect */
+.hero-logo:hover {
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 40px rgba(0,157,255,0.45));
 }
 
 /* SECTIONS */
