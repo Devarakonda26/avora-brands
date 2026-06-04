@@ -389,73 +389,64 @@ body {
     z-index: 9999;
 }
 
-/* WHATSAPP BUTTON */
+/* FLOATING CONTACT */
 
-.whatsapp-btn {
-    background: #25D366;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 50px;
+.floating-contact {
+    position: fixed;
+    right: 20px;
+    bottom: 25px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 12px;
-    text-decoration: none;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-    transition: 0.3s ease;
+    z-index: 9999;
 }
 
-.whatsapp-btn i {
-    font-size: 28px;
-}
-
-.whatsapp-btn span {
-    font-size: 15px;
-    font-weight: 600;
-}
-
-/* PHONE BUTTON */
-
-.phone-btn {
+.floating-whatsapp,
+.floating-phone {
     width: 58px;
     height: 58px;
     border-radius: 50%;
-    background: #009dff;
-    color: white;
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-decoration: none;
-    font-size: 22px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-    transition: 0.3s ease;
+    align-items: center;
+    text-decoration: none !important;
+    color: white !important;
+    font-size: 26px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
 }
 
-/* HOVER */
+.floating-whatsapp {
+    background: #25D366;
+}
 
-.whatsapp-btn:hover,
-.phone-btn:hover {
-    transform: translateY(-4px);
+.floating-phone {
+    background: #009dff;
+}
+
+.floating-whatsapp:hover,
+.floating-phone:hover {
+    transform: scale(1.08);
 }
 
 /* MOBILE */
 
-@media(max-width:768px){
+@media (max-width:768px) {
 
-    .floating-buttons{
-        right: 18px;
-        bottom: 18px;
+    .floating-contact {
+        position: fixed;
+        right: 15px;
+        bottom: 40px; /* lowered for mobile */
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        z-index: 9999;
     }
 
-    .whatsapp-btn span{
-        display:none;
+    .floating-whatsapp,
+    .floating-phone {
+        width: 52px;
+        height: 52px;
+        font-size: 22px;
     }
-
-    .whatsapp-btn{
-        width:58px;
-        height:58px;
-        border-radius:50%;
-        justify-content:center;
-        padding:0;
-    }
-
 }
