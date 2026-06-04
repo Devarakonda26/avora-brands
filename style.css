@@ -216,29 +216,7 @@ body {
     box-shadow: 0 0 20px rgba(0,157,255,0.2);
 }
 
-/* FOUNDERS */
 
-.founder-card {
-    background: rgba(255,255,255,0.05);
-    border-radius: 20px;
-    padding: 35px;
-    text-align: center;
-    transition: 0.3s;
-    height: 100%;
-}
-
-.founder-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 0 20px rgba(0,157,255,0.2);
-}
-
-/* FOOTER */
-
-.footer {
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding: 25px 0;
-    color: #b8c0d1;
-}
 
 /* SOCIAL ICONS */
 
@@ -299,5 +277,102 @@ body {
 
     .section-title {
         font-size: 28px;
+    }
+}
+
+/* SMALLER PREMIUM SERVICE GROWTH SECTION */
+
+.service-growth-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.growth-box {
+    max-width: 720px;
+    margin: auto;
+    background: rgba(15, 23, 42, 0.95);
+    border: 1px solid rgba(0, 170, 255, 0.18);
+    border-radius: 22px;
+    padding: 35px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    transition: 0.3s ease;
+    box-shadow: 0 0 25px rgba(0, 140, 255, 0.06);
+}
+
+.growth-box::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: rgba(0, 153, 255, 0.08);
+    border-radius: 50%;
+    top: -70px;
+    right: -50px;
+    filter: blur(70px);
+}
+
+.growth-box:hover {
+    transform: translateY(-4px);
+    border-color: #00aaff;
+}
+
+.growth-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.growth-box h2 {
+    font-size: 30px;
+    color: #ffffff;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+
+.growth-text {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #b8c5d6;
+    max-width: 600px;
+    margin: auto;
+}
+
+.growth-text span {
+    color: #00aaff;
+    font-weight: 600;
+}
+
+.growth-tags {
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.growth-tags span {
+    background: rgba(0, 170, 255, 0.10);
+    color: #00aaff;
+    padding: 8px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 170, 255, 0.18);
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .growth-box {
+        padding: 28px 20px;
+    }
+
+    .growth-box h2 {
+        font-size: 24px;
+    }
+
+    .growth-text {
+        font-size: 14px;
     }
 }
