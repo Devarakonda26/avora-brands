@@ -945,3 +945,13 @@ body {
         gap: 16px;
     }
 }
+
+.team-link{
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.team-link:hover{
+    text-decoration: none;
+}

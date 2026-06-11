@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praveen | Avora Brands</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            background:#050B1A;
+            color:white;
+        }
+
+        /* NAVBAR */
+
+        .navbar{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:20px 8%;
+            background:rgba(0,0,0,0.25);
+            backdrop-filter: blur(15px);
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:700;
+            color:#fff;
+        }
+
+        .back-btn{
+            text-decoration:none;
+            color:#1E90FF;
+            font-weight:600;
+        }
+
+        /* PROFILE SECTION */
+
+        .profile-section{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:70px 8%;
+        }
+
+        .profile-container{
+            max-width:1200px;
+            width:100%;
+            display:grid;
+            grid-template-columns:1fr 1.4fr;
+            gap:50px;
+            align-items:center;
+        }
+
+        /* IMAGE */
+
+        .profile-image{
+            text-align:center;
+        }
+
+        .profile-image img{
+            width:100%;
+            max-width:420px;
+            border-radius:30px;
+            border:2px solid #1E90FF;
+            box-shadow:
+            0 0 40px rgba(30,144,255,0.25);
+            transition:0.4s;
+        }
+
+        .profile-image img:hover{
+            transform:translateY(-8px);
+        }
+
+        /* DETAILS */
+
+        .profile-content h1{
+            font-size:52px;
+            margin-bottom:10px;
+        }
+
+        .role{
+            color:#1E90FF;
+            font-size:20px;
+            font-weight:600;
+            margin-bottom:25px;
+            display:block;
+        }
+
+        .bio{
+            color:#B8C0D1;
+            line-height:1.9;
+            font-size:17px;
+            margin-bottom:35px;
+        }
+
+        /* SKILLS */
+
+        .skills-title{
+            margin-bottom:20px;
+            font-size:26px;
+        }
+
+        .skills{
+            display:flex;
+            flex-wrap:wrap;
+            gap:15px;
+            margin-bottom:40px;
+        }
+
+        .skill{
+            background:rgba(255,255,255,0.06);
+            border:1px solid rgba(255,255,255,0.08);
+            padding:14px 22px;
+            border-radius:50px;
+            transition:0.3s;
+        }
+
+        .skill:hover{
+            border-color:#1E90FF;
+            transform:translateY(-5px);
+            box-shadow:0 0 20px rgba(30,144,255,0.15);
+        }
+
+        /* SOCIAL */
+
+        .social-title{
+            margin-bottom:20px;
+            font-size:26px;
+        }
+
+        .social-links{
+            display:flex;
+            gap:20px;
+        }
+
+        .social-links a{
+            width:60px;
+            height:60px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-decoration:none;
+            background:rgba(255,255,255,0.05);
+            border:1px solid rgba(255,255,255,0.08);
+            color:#fff;
+            font-size:24px;
+            transition:0.3s;
+        }
+
+        .social-links a:hover{
+            background:#1E90FF;
+            transform:translateY(-8px);
+            box-shadow:0 0 25px rgba(30,144,255,0.35);
+        }
+
+        /* MOBILE */
+
+        @media(max-width:900px){
+
+            .profile-container{
+                grid-template-columns:1fr;
+                text-align:center;
+            }
+
+            .profile-content h1{
+                font-size:38px;
+            }
+
+            .skills{
+                justify-content:center;
+            }
+
+            .social-links{
+                justify-content:center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            AVORA
+        </div>
+
+        <a href="index.html" class="back-btn">
+            ← Back
+        </a>
+
+    </nav>
+
+
+    <section class="profile-section">
+
+        <div class="profile-container">
+
+            <!-- IMAGE -->
+
+            <div class="profile-image">
+
+                <img src="images/praveen.jpg" alt="Praveen">
+
+            </div>
+
+
+            <!-- CONTENT -->
+
+            <div class="profile-content">
+
+                <h1>
+                    Praveen Devarakonda
+                </h1>
+
+                <span class="role">
+                    Co-Founder & Production Director
+                </span>
+
+                <p class="bio">
+
+                    Praveen Devarakonda is the Co-Founder &
+                    Production Director at Avora Brands,
+                    responsible for overseeing project execution,
+                    operational workflows, and ensuring seamless
+                    delivery across branding and digital projects.
+
+                    With growing expertise in web development,
+                    UI/UX collaboration, and digital experiences,
+                    he focuses on transforming ideas into impactful
+                    solutions while maintaining quality,
+                    efficiency, and client satisfaction.
+
+                    Passionate about creativity and innovation,
+                    Praveen works closely with the team to bring
+                    meaningful brand experiences to life.
+
+                </p>
+
+                <h3 class="skills-title">
+                    Skills
+                </h3>
+
+                <div class="skills">
+
+                    <div class="skill">Project Management</div>
+                    <div class="skill">Website Development</div>
+                    <div class="skill">UI/UX Collaboration</div>
+                    <div class="skill">Team Coordination</div>
+                    <div class="skill">Brand Strategy</div>
+                    <div class="skill">Operations Management</div>
+                    <div class="skill">Problem Solving</div>
+                    <div class="skill">Client Coordination</div>
+
+                </div>
+
+
+                <h3 class="social-title">
+                    Connect With Me
+                </h3>
+
+                <div class="social-links">
+
+                    <a href="https://linkedin.com/in/praveendevara"
+                        target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/mr_broken557?igsh=MWZvbzFkYnl2dW1kcg=="
+                        target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/Devarakonda26"
+                        target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="mailto:praveenkumardevarakonda8@gmail.com?subject=Let's%20Connect&body=Hi%20Praveen,%20I%20wanted%20to%20connect%20with%20you."
+                    target="_blank">
+
+                    <i class="fas fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
